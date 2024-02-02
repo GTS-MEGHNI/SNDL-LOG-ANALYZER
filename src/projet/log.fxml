@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pane" prefHeight="367.0" prefWidth="419.0" stylesheets="@css_log.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.ControllerLogIn">
+   <children>
+      <JFXTextField fx:id="user" labelFloat="true" layoutX="95.0" layoutY="125.0" prefHeight="33.0" prefWidth="259.0">
+         <font>
+            <Font name="Verdana" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" labelFloat="true" layoutX="97.0" layoutY="195.0" prefHeight="34.0" prefWidth="259.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton id="connexion" layoutX="86.0" layoutY="278.0" onAction="#clickConnexion" prefHeight="40.0" prefWidth="110.0" styleClass="login-button" text="Connexion">
+         <effect>
+            <Reflection />
+         </effect>
+      </JFXButton>
+      <JFXButton id="quitter" layoutX="239.0" layoutY="278.0" onAction="#clickQuitter" prefHeight="40.0" prefWidth="90.0" styleClass="login-button" text="Quitter" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="167.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mysql.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="50.0" layoutX="14.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="50.0" layoutX="14.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true" rotate="210.0">
+         <image>
+            <Image url="@password.png" />
+         </image>
+      </ImageView>
+      <JFXCheckBox fx:id="check" checkedColor="WHITE" focusTraversable="false" layoutX="272.0" layoutY="338.0" text="Se souvenir de moi" textFill="WHITE" unCheckedColor="WHITE">
+         <effect>
+            <Bloom />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXCheckBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+/* 
+    Credit to : afsal villan
+    Youtube Channel : 
+*/
+
+#pane{
+    -fx-background-color: #2A2E37;
+}
+
+
+.button{
+    -fx-text-fill: #B2B2B2;
+    -fx-background-color: #2A2E37;
+    -fx-border-color: #FFFF8D;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 13pt;
+}
+
+.button:hover{
+    -fx-border-color: #FFFF8D;
+    -fx-background-color: #FFFF8D;
+    -fx-text-fill:  #2A2E37;
+}
+
+#user, #password {
+	-fx-text-fill: WHITE;
+}
+
+
+

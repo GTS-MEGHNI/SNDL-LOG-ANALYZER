@@ -1,0 +1,18 @@
+#pane1 {
+    -fx-background-color: #525B56;
+}
+
+.button {
+	-fx-background-color: #f46A4E;
+}
+
+.table-cell { 
+	-fx-font-style: italic; 
+	-fx-font-family: "Verdana"; 
+	-fx-font-size : 18;
+	}
+
+#quitter:hover {
+	-fx-text-fill : red;
+}
+

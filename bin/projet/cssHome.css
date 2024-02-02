@@ -1,0 +1,24 @@
+.button{
+    -fx-background-color: #73EC4E;
+    -fx-font-size: 13pt;
+}
+
+#session:hover {
+	-fx-text-fill: blue;
+}
+
+#pane {
+	-fx-background-image : url("wallpaper.jpg");
+}
+
+#pane2 {
+	-fx-background-color : #36688D;
+}
+
+#pane3 {
+	-fx-background-color : #36688D;
+}
+
+#pane4 {
+	-fx-background-color : WHITE;
+}

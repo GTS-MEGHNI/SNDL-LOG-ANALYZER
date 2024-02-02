@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="123.0" prefWidth="300.0" stylesheets="@cssHome.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.ControllerExport">
+   <children>
+      <JFXButton fx:id="tel" focusTraversable="false" layoutX="17.0" layoutY="18.0" onAction="#clickTel" prefHeight="90.0" prefWidth="108.0" text="Téléchargement" />
+      <JFXButton fx:id="rech" focusTraversable="false" layoutX="165.0" layoutY="17.0" onAction="#clickRech" prefHeight="90.0" prefWidth="108.0" text="Recherche" />
+      <ImageView disable="true" fitHeight="40.0" fitWidth="60.0" layoutX="51.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@excel.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="40.0" fitWidth="60.0" layoutX="199.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@excel.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

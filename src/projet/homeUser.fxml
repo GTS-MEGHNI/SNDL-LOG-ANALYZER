@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="pane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" stylesheets="@cssHome.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.Controller">
+   <children>
+      <Pane id="pane3" layoutX="-5.0" layoutY="559.0" prefHeight="147.0" prefWidth="1370.0" stylesheets="@cssHome.css">
+         <children>
+            <Label layoutX="71.0" layoutY="30.0" text="SLA" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon.png" />
+               </image>
+               <effect>
+                  <Bloom />
+               </effect>
+            </ImageView>
+            <Label layoutX="70.0" layoutY="58.0" text="SNDL-LOG-ANALYZER is a powerfull Desktop application" textFill="WHITE">
+               <effect>
+                  <Bloom threshold="1.0" />
+               </effect>
+            </Label>
+            <Label layoutX="70.0" layoutY="78.0" text="for the Cerist's center which allow ro grab and analyze and extract" textFill="WHITE" />
+            <Label layoutX="70.0" layoutY="96.0" text="a massive number of log data" textFill="WHITE" />
+            <Label layoutX="1000.0" layoutY="30.0" text="Contact" textFill="WHITE">
+               <effect>
+                  <Bloom />
+               </effect>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="1000.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@mail.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1030.0" layoutY="63.0" text="ceristdir@cerist.dz" textFill="WHITE">
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="1000.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@call.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1030.0" layoutY="94.0" text=" (+213) 23.25.54.17" textFill="WHITE">
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="20.0" layoutX="1000.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@address.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1030.0" layoutY="120.0" text="CERIST 05, Rue des 3 frères aissou - Ben Aknoun - Alger-Algérie" textFill="WHITE">
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+      <Pane id="pane2" layoutX="-2.0" layoutY="-3.0" prefHeight="562.0" prefWidth="200.0" stylesheets="@cssHome.css">
+         <children>
+            <JFXButton fx:id="importer" buttonType="RAISED" focusTraversable="false" layoutX="35.0" layoutY="70.0" onAction="#clickImport" prefHeight="40.0" prefWidth="100.0" text="Importer">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="140.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@importer.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <JFXButton fx:id="nettoyer" buttonType="RAISED" focusTraversable="false" layoutX="35.0" layoutY="140.0" onAction="#clickNettoyer" prefHeight="40.0" prefWidth="100.0" text="Nettoyer">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </JFXButton>
+            <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="140.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@nettoyer.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <JFXButton fx:id="extraire" buttonType="RAISED" focusTraversable="false" layoutX="35.0" layoutY="210.0" onAction="#clickExtraire" prefHeight="40.0" prefWidth="100.0" text="Extraire">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="140.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@extraire.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <JFXButton fx:id="stat" buttonType="RAISED" focusTraversable="false" layoutX="35.0" layoutY="420.0" onAction="#clickStat" prefHeight="40.0" prefWidth="100.0" text="Stats" />
+            <JFXButton fx:id="exporter" buttonType="RAISED" focusTraversable="false" layoutX="35.0" layoutY="280.0" onAction="#clickExporter" prefHeight="40.0" prefWidth="100.0" text="Exporter">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="138.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@excel.png" />
+               </image>
+               <effect>
+                  <Bloom />
+               </effect>
+            </ImageView>
+            <JFXButton fx:id="gestion" buttonType="RAISED" focusTraversable="false" layoutX="35.0" layoutY="350.0" onAction="#clickGestion" prefHeight="40.0" prefWidth="100.0" text="Gestion" textAlignment="CENTER" />
+            <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="141.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@settings.png" />
+               </image>
+               <effect>
+                  <Bloom />
+               </effect>
+            </ImageView>
+            <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" layoutX="142.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@statistics-growth-chart-bar-graph-analytics-3e37fcde2e7010e5-512x512.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="76.0" fitWidth="129.0" layoutX="16.0" layoutY="478.0" onMouseClicked="#logOff" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@leave.png" />
+               </image>
+               <effect>
+                  <DropShadow color="WHITE" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@256-128.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="user" layoutX="66.0" layoutY="23.0" textFill="WHITE">
+               <effect>
+                  <Bloom />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="2.0" layoutY="145.0" onMouseClicked="#hintNettoyer" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hint.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="215.0" onMouseClicked="#hintExtraire" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hint.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="283.0" onMouseClicked="#hintExport" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hint.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="355.0" onMouseClicked="#hintGestion" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hint.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="425.0" onMouseClicked="#hintStat" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hint.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="1.0" layoutY="73.0" onMouseClicked="#hintImport" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hint.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+   </children>
+</Pane>

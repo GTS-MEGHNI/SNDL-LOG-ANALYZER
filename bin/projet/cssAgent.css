@@ -1,0 +1,12 @@
+#pane1 {
+    -fx-background-color: #525B56;
+}
+
+.button {
+	-fx-background-color: #525B56;
+}
+
+#quitter:hover {
+	-fx-text-fill : red;
+}
+
